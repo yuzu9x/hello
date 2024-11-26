@@ -1,6 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <style>
+        body {
+            background-image: url("assets/bgs/bg3.jpeg");
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+        }
+        
+        .tb1 {
+            background-color: black;
+            width: 600px;
+            height: 600px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 0px;
+            overflow: auto;
+            border-style: solid;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .tb1pos {
+            position: absolute;
+            top: 250px;
+            left: 10px;
+            right: 10px;
+        }
+        
+        .text-content {
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: 100%;
+        }
+
+        header{
+            font-weight: bold;
+            color: black;
+            padding-top: 50px;
+        }
+        footer{
+            font-color: black;
+            font-weight: bold;
+            padding-bottom: 50px;
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p5 projects!</title>
@@ -9,49 +66,57 @@
 <body>
     <header>
       <!-- Title name of page, plus navigation directory -->
-      <h2>p5 Projects :3</h2>
+      <center>
+        <img src="assets/titles/p5js.png" alt="Melisa Li" style="width:170px;height:80px;">
+    </center>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="art.html">My Art</a></li>
-                <li><a href="p5.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="p5.html">p5.js</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         
-        <p>(^_^)</p>
         <div class="container">
             <!-- Flexbox that contains my p5 projects. -->
-            <div class="right-content">
-                <h3>Here are my p5.js projects:</h3>
-            </div>
+            
     
             <!-- Right side: Embedded p5.js project -->
             <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/YgNGl7Ajt" width="600" height="400" frameborder="0"></iframe>
-                <p>Here is my autobiographical game assignment. It is very rough and lacks actual substance. I intended to add dialogue and other various sound effects to enhance the gameplay.</p>
+                <iframe src="https://editor.p5js.org/yuzu9x/sketches/YgNGl7Ajt" width="400" height="400" frameborder="0"></iframe>
+                <p><b>Autobiographical Game</b></p>
+                <p><i>Very rough and lacks actual substance. I intended to add dialogue and other various sound effects to enhance the gameplay.</i></p>
             </div>
             <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/IyckXnc0u" width="600" height="400" frameborder="0"></iframe>
+                <iframe src="https://editor.p5js.org/yuzu9x/sketches/IyckXnc0u" width="400" height="400" frameborder="0"></iframe>
+                <p><b>Exquisite Corpse</b></p>
+                <p><i>Using rudimentary shapes and the text function, I created an exquisite corpse graphic made by my two other groupmates.</i></p>
             </div>
             <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/CXbRTw9BJ" width="600" height="400" frameborder="0"></iframe>
+                <iframe src="https://editor.p5js.org/yuzu9x/sketches/CXbRTw9BJ" width="400" height="400" frameborder="0"></iframe>
+                <p><b>Lost & Found</b></p>
+                <p><i>Using the description Michelle provided, I recreated her lost phone using rudimentary shapes, and manually creating a metallic gradient to achieve a metallic effect.</i></p>
             </div>
             <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/dlQN-FjgC" width="600" height="400" frameborder="0"></iframe>
+                <iframe src="https://editor.p5js.org/yuzu9x/sketches/dlQN-FjgC" width="400" height="400" frameborder="0"></iframe>
+                <p><b>Optical Illusion</b></p>
+                <p><i>I wasn't too sure how to create an original "optical illusion" from scratch so instead I took inspiration from generic spiraling optical illusions, then created a fish mouse pointer to make it look like it was swimming around a water ripple. </i></p>
             </div>
             <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/NHtAesPw9" width="600" height="400" frameborder="0"></iframe>
+                <iframe src="https://editor.p5js.org/yuzu9x/sketches/NHtAesPw9" width="400" height="400" frameborder="0"></iframe>
+                <p><b>Experimental Clock</b></p>
+                <p><i>I decided to make an oven themed "clock", and used a visual animation of the cake rising in the oven as an indication of time passing.</i></p>
             </div>
             <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/full/qLMABqjqH" width="600" height="400" frameborder="0"></iframe>
+                <iframe src="https://editor.p5js.org/yuzu9x/full/qLMABqjqH" width="400" height="400" frameborder="0"></iframe>
+                <p><b>Face Generator</b></p>
+                <p><i>By using arrays, I was easily able to create a "random face generator" by using japanese text emoticons.</i>
             </div>
-            <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/NHtAesPw9" width="600" height="400" frameborder="0"></iframe>
-            </div>
+            
         </div>
 
     </main>

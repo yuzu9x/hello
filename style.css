@@ -1,12 +1,11 @@
 html, body {
   height: 100%;
-  margin: 0;  
+  margin: auto;  
   padding: 0; 
   display: flex;
   
-  background-color: floralwhite;
-  background-size: cover;  
-  background-position: center;  
+
+
 }
 
 canvas {
@@ -14,37 +13,18 @@ canvas {
   margin: auto;
 }
 
-
-
 .container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: flex-end; 
   align-items: flex-start; 
-  height: 100vh; 
+  height: 1000px; 
   padding: 20px;
 }
 
-/* Left side content (text, etc.) */
-.left-content {
-  flex: 1;  /* Take up remaining space */
-  padding-right: 20px;  /* Add space between content and iframe */
-}
 
-/* Right side content (iframe for p5.js) */
-.right-content {
-  width: 600px;  /* Set the width of the iframe */
-  height: 400px; /* Set the height of the iframe */
-}
+    
+    
 
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;  /* Remove the iframe border */
-}
-h2 {
-  color: black;
-}
 
-h2:hover {
-  color: lightpink;
-}
+
+

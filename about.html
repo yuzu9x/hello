@@ -3,28 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Melisa!</title>
+    <title>Melisa's Art!</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("assets/bgs/bg2.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .tb1 {
+            background-color: black;
+            width: 600px;
+            height: 600px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 0px;
+            overflow: auto;
+            border-style: solid;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black; /* Changed from black to white for visibility */
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .tb1pos {
+            position: absolute;
+            top: 250px;
+            left: 10px;
+            right: 10px;
+        }
+        .text-content {
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: 100%;
+            text-align: center; /* Added to center the text */
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        footer {
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            padding: 50px 0;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
-      <!-- Title name of page, plus navigation directory -->
-      <h2>About Me!</h2>
+        <img src="assets/titles/aboutme.png" alt="Melisa Li" style="width:400px;height:80px;">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="art.html">My Art</a></li>
-                <li><a href="p5.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="p5.html">p5.js</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        
-        <p>(>_<)</p>
+        <div class="tb1">
+            <div class="tb1pos">
+                <p class="text-content">
+                 uh u h
+                </p>
+            </div>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Melisa Li</p>
     </footer>
