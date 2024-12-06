@@ -14,15 +14,16 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
+            font-family: 'Courier New', Courier, monospace;
         }
-        .tb1 {
+        .content-container {
             background-color: black;
             width: 600px;
-            height: 600px;
+            max-width: 90%;
+            margin: 0 auto; /* Added to center the text box */
             border: 2px solid rgb(0, 0, 0);
-            border-radius: 0px;
+            border-radius: 0;
             overflow: auto;
-            border-style: solid;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -35,21 +36,13 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: black; /* Changed from black to white for visibility */
-            font-family: 'Courier New', Courier, monospace;
+            color: black;
             font-weight: bold;
         }
-        .tb1pos {
-            position: absolute;
-            top: 250px;
-            left: 10px;
-            right: 10px;
-        }
         .text-content {
-            font-family: 'Courier New', Courier, monospace;
             color: white;
             font-size: 100%;
-            text-align: center; /* Added to center the text */
+            text-align: center;
         }
         header {
             text-align: center;
@@ -61,12 +54,16 @@
             color: black;
             padding: 50px 0;
         }
-        
+        .decorative-vine {
+            width: 100%;
+            height: 50px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/titles/aboutme.png" alt="Melisa Li" style="width:400px;height:80px;">
+        <img src="assets/titles/aboutme.png" alt="Melisa Li - About Me" style="width:400px;height:80px;">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -77,12 +74,16 @@
         </nav>
     </header>
     <main>
-        <div class="tb1">
-            <div class="tb1pos">
-                <p class="text-content">
-                 uh u h
-                </p>
+        <div class="content-container">
+            <img class="decorative-vine" src="assets/vine33.gif" alt="Decorative Vine Separator">
+            <div class="text-content">
+                <p>Dear Reader,</p>
+                <p>Hi! I'm Melisa and this is my digital portfolio. I was born and raised in NYC and have had an affinity for art for as long as I can remember. I love drawing and working with various mediums, both traditional and non-traditional. I create art for myself and those alike, and believe that consistency is a trustworthy expression of one's true self.</p>
+                <p>While I enjoy painting, sketching, and all things alike, I love exploring more unconventional mediums too such as nail art, cake decoration, soft structures, and 3D modeling.</p>
+                <p>I think art is incredibly important as it surrounds us in our daily lives and can heavily influence our feelings and thoughts. I hope I can help more people come to this understanding through my time.</p>
+                <p>Love,<br>Melisa</p>
             </div>
+            <img class="decorative-vine" src="assets/vine33.gif" alt="Decorative Vine Separator">
         </div>
     </main>
     <footer>
