@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melisa Li - p5.js Projects</title>
     <style>
         body {
-            background-image: url("assets/bgs/bg3.jpeg");
-            font-family: 'Courier New', Courier, monospace, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
         
-        .tb1 {
-            background-color: black;
-            width: 600px;
-            height: 600px;
-            border: 2px solid rgb(0, 0, 0);
-            border-radius: 0px;
-            overflow: auto;
-            border-style: solid;
-            padding: 20px;
-            box-sizing: border-box;
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
         }
         
         nav ul {
@@ -26,49 +26,62 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            margin: 10px 0;
         }
         
         nav ul li a {
             text-decoration: none;
-            color: black;
-        }
-        
-        .tb1pos {
-            position: absolute;
-            top: 250px;
-            left: 10px;
-            right: 10px;
-        }
-        
-        .text-content {
-            font-family: 'Courier New', Courier, monospace;
             color: white;
-            font-size: 100%;
+            transition: color 0.3s ease;
         }
-
-        header{
-            font-weight: bold;
-            color: black;
-            padding-top: 50px;
+        
+        nav ul li a:hover {
+            color: #cccccc;
         }
-        footer{
-            font-color: black;
-            font-weight: bold;
-            padding-bottom: 50px;
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .project {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .project iframe {
+            border-radius: 5px;
+            max-width: 100%;
+        }
+        
+        .project-description {
+            margin-top: 10px;
+            font-style: italic;
+            color: #333;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>p5 projects!</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-      <!-- Title name of page, plus navigation directory -->
-      <center>
-        <img src="assets/titles/p5js.png" alt="Melisa Li" style="width:170px;height:80px;">
-    </center>
+        <img src="assets/titles/p5js.png" alt="p5.js Projects" style="width:170px;height:80px;">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -80,49 +93,47 @@
     </header>
 
     <main>
-        
         <div class="container">
-            <!-- Flexbox that contains my p5 projects. -->
+            <div class="project">
+                <iframe src="https://editor.p5js.org/yuzu9x/full/YgNGl7Ajt" width="400" height="400" frameborder="0"></iframe>
+                <h2>Autobiographical Game</h2>
+                <p class="project-description">Attempt at making a game with various scene changes modeled after a JRPG story game. Explores scene transitions and basic game mechanics.</p>
+            </div>
             
-    
-            <!-- Right side: Embedded p5.js project -->
-            <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/YgNGl7Ajt" width="400" height="400" frameborder="0"></iframe>
-                <p><b>Autobiographical Game</b></p>
-                <p><i>Attempt at making a game with various scene changes modeled after a JRPG story game. Was really fun to make the art and animations for it before I ran out of time lol. Figuring out Scene changes was...an interesting process. Very rough and lacks actual substance. I intended to add dialogue and other various sound effects to enhance the gameplay.</i></p>
+            <div class="project">
+                <iframe src="https://editor.p5js.org/yuzu9x/full/IyckXnc0u" width="400" height="400" frameborder="0"></iframe>
+                <h2>Exquisite Corpse</h2>
+                <p class="project-description">Collaborative graphic created using rudimentary shapes and text functions, combining work from multiple group members.</p>
             </div>
-            <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/IyckXnc0u" width="400" height="400" frameborder="0"></iframe>
-                <p><b>Exquisite Corpse</b></p>
-                <p><i>Using rudimentary shapes and the text function, I created an exquisite corpse graphic made by my two other groupmates.</i></p>
+            
+            <div class="project">
+                <iframe src="https://editor.p5js.org/yuzu9x/full/CXbRTw9BJ" width="400" height="400" frameborder="0"></iframe>
+                <h2>Lost & Found</h2>
+                <p class="project-description">Recreated a lost phone using basic shapes and a manually crafted metallic gradient to achieve a realistic effect.</p>
             </div>
-            <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/CXbRTw9BJ" width="400" height="400" frameborder="0"></iframe>
-                <p><b>Lost & Found</b></p>
-                <p><i>Using the description Michelle provided, I recreated her lost phone using rudimentary shapes, and manually creating a metallic gradient to achieve a metallic effect.</i></p>
+            
+            <div class="project">
+                <iframe src="https://editor.p5js.org/yuzu9x/full/dlQN-FjgC" width="400" height="400" frameborder="0"></iframe>
+                <h2>Optical Illusion</h2>
+                <p class="project-description">Inspired by spiraling optical illusions, featuring an interactive fish mouse pointer creating a water ripple effect.</p>
             </div>
-            <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/dlQN-FjgC" width="400" height="400" frameborder="0"></iframe>
-                <p><b>Optical Illusion</b></p>
-                <p><i>I wasn't too sure how to create an original "optical illusion" from scratch so instead I took inspiration from generic spiraling optical illusions, then created a fish mouse pointer to make it look like it was swimming around a water ripple. </i></p>
+            
+            <div class="project">
+                <iframe src="https://editor.p5js.org/yuzu9x/full/NHtAesPw9" width="400" height="400" frameborder="0"></iframe>
+                <h2>Experimental Clock</h2>
+                <p class="project-description">Innovative oven-themed clock that visualizes time passage through a cake rising animation.</p>
             </div>
-            <div class="right-content">
-                <iframe src="https://editor.p5js.org/yuzu9x/sketches/NHtAesPw9" width="400" height="400" frameborder="0"></iframe>
-                <p><b>Experimental Clock</b></p>
-                <p><i>I decided to make an oven themed "clock", and used a visual animation of the cake rising in the oven as an indication of time passing.</i></p>
-            </div>
-            <div class="right-content">
+            
+            <div class="project">
                 <iframe src="https://editor.p5js.org/yuzu9x/full/qLMABqjqH" width="400" height="400" frameborder="0"></iframe>
-                <p><b>Face Generator</b></p>
-                <p><i>By using arrays, I was easily able to create a "random face generator" by using japanese text emoticons.</i>
+                <h2>Face Generator</h2>
+                <p class="project-description">Random face generator using arrays and Japanese text emoticons, demonstrating creative coding techniques.</p>
             </div>
-            
         </div>
-
     </main>
 
     <footer>
-        <p>&copy; 2024 Melisa Li</p>
+        <p>&copy; 2024 Melisa Li | p5.js Projects</p>
     </footer>
 </body>
 </html>
