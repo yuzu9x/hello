@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+
     <title>Melisa Li - p5.js Projects</title>
     <style>
         body {
@@ -58,7 +61,7 @@
             width: 100%;
         }
         
-        .project iframe {
+        .project canvas, .project iframe {
             border-radius: 5px;
             max-width: 100%;
         }
@@ -98,7 +101,8 @@
     <main>
         <div class="container">
             <div class="project">
-                <iframe src="https://editor.p5js.org/yuzu9x/full/YgNGl7Ajt" width="400" height="400" frameborder="0"></iframe>
+                <div id="autobiographical-game"></div>
+                <script src="p5games/AutoBioGame/sketch.js"></script>
                 <h2>Autobiographical Game</h2>
                 <p class="project-description">Attempt at making a game with various scene changes modeled after a JRPG story game. Explores scene transitions and basic game mechanics.</p>
             </div>

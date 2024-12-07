@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melisa's Art!</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             background-image: url("assets/bgs/bg4.jpeg");
             margin: 0;
-            font-family: 'Courier New', Courier, monospace, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
         }
-        .tb1 {
-            background-color: black;
-            width: 600px;
-            height: 600px;
-            border: 2px solid rgb(0, 0, 0);
-            border-radius: 0px;
-            overflow: auto;
-            border-style: solid;
-            padding: 20px;
-            box-sizing: border-box;
+
+        .container {
+            max-width: 600px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            
         }
+
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -30,41 +31,45 @@
             justify-content: center;
             gap: 20px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: black;
-            transition: color 0.3s ease;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
+
         nav ul li a:hover {
             color: #950000;
         }
-        .tb1pos {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .text-content {
-            font-family: 'Courier New', Courier, monospace;
-            color: white;
-            font-size: 100%;
-            text-align: center;
+
+        .title-image {
+            max-width: 270px;
+            height: auto;
+            margin: 20px 0;
         }
-        header {
-            text-align: center;
-            padding: 50px 0;
+
+        .decorative-vine {
+            max-width: 400px;
+            height: 50px;
         }
+
         footer {
-            text-align: center;
-            padding: 50px 0;
+            margin-top: auto;
+            padding: 20px;
             font-weight: bold;
-          
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/titles/melisali.png" alt="Melisa Li" style="width:400px;height:80px;">
+        <img src="assets/titles/melisali.png" alt="Melisa Li" style="max-width: 400px; height: auto;">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -74,19 +79,22 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="tb1">
-            <div class="tb1pos">
-              <img class="decorative-vine" src="assets/rosedivider.gif" alt="Rose Divider">
-                <p class="text-content">
-                    hello i am melisa and this is my portfolio website sorry it is really bad i hate it
-                    it is really poop
-                    <img class="title-image" src="assets/rilak.jpeg" alt="Melisa Li" style="width:270px;height:200px;">
-                </p>
-                <img class="decorative-vine" src="assets/rosedivider.gif" alt="Rose Divider">
-            </div>
+
+    <main class="container">
+        <div class="content-wrapper">
+            <img class="decorative-vine" src="assets/rosedivider.gif" alt="Rose Divider">
+            
+            <p>
+                hello i am melisa and this is my portfolio website sorry it is really bad i hate it
+                it is really poop
+            </p>
+            
+            <img class="title-image" src="assets/rilak.jpeg" alt="Melisa Li">
+            
+            <img class="decorative-vine" src="assets/rosedivider.gif" alt="Rose Divider">
         </div>
     </main>
+
     <footer>
         <p>&copy; 2024 Melisa Li</p>
     </footer>
