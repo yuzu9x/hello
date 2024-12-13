@@ -37,22 +37,22 @@ function preload() {
   
   
   // Font
-  font = loadFont('visualelm/GothicPixels.ttf');
+  font = loadFont('p5games/AutoBioGame/visualelm/GothicPixels.ttf');
   
   // Background images
-  titleSceneBackground = loadImage("assets/title.png");
-  scene1Background = loadImage("assets/scene1bg.png");
-  scene2Background = loadImage("assets/scene2bg.jpg");
-  scene3Background = loadImage("assets/scene3bg.jpg");
-  scene4Background = loadImage("assets/scene4bg.jpg");
+  titleSceneBackground = loadImage("p5games/AutoBioGame/assets/title.png");
+  scene1Background = loadImage("p5games/AutoBioGame/assets/scene1bg.png");
+  scene2Background = loadImage("p5games/AutoBioGame/assets/scene2bg.jpg");
+  scene3Background = loadImage("p5games/AutoBioGame/assets/scene3bg.jpg");
+  scene4Background = loadImage("p5games/AutoBioGame/assets/scene4bg.jpg");
   // endSceneBackground = loadImage();
   
-  titleText = loadImage("assets/arecordofmydreams.png");
-  arrowKeys = loadImage("assets/arrowkeys.png");
-  spaceBar = loadImage("assets/spacebar.png");
+  titleText = loadImage("p5games/AutoBioGame/assets/arecordofmydreams.png");
+  arrowKeys = loadImage("p5games/AutoBioGame/assets/arrowkeys.png");
+  spaceBar = loadImage("p5games/AutoBioGame/assets/spacebar.png");
   
   // Load sprite sheet for the player
-  playerSpriteSheet = loadImage("maincharacter.png");
+  playerSpriteSheet = loadImage("p5games/AutoBioGame/maincharacter.png");
 }
 
 function setup() {
