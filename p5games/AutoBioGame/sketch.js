@@ -30,10 +30,12 @@ let totalFrames = 4; // Number of frames in the sprite sheet for each direction
 let frameWidth = 50; // Width of each frame
 let frameHeight = 50; // Height of each frame
 
+
+
 function preload() {
   
   // bg music
-  bgMusic = loadSound('p5games/AutoBioGame/visualelm/stylesavvy_rosietheme.mp3');
+  bgMusic = loadSound("p5games/AutoBioGame/visualelm/stylesavvy_rosietheme.mp3");
   
   
   // Font
@@ -56,7 +58,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(600, 400).parent("testing");
   noSmooth();
 
    bgMusic.loop();
@@ -79,6 +81,8 @@ function setup() {
   currentScene.enterScene();
 
   inputActive = true;
+
+  
 }
 
 function draw() {

@@ -13,7 +13,7 @@ function preload() {
 
 function setup() {
   noCursor()
-  createCanvas(600, 600);
+  createCanvas(600, 600).parent("testing");
   strokeWeight(4); // Water ripple thickness
 }
 

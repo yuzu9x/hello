@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Melisa Li - p5.js Projects</title>
+    <title>Melisa Li - Autobiographical Game</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
             background-image: url("assets/bgs/bg7.jpeg");
-            margin: 0;
+            margin: auto;
             padding: 0;
             line-height: 1.6;
             display: flex;
@@ -32,7 +31,7 @@
         }
 
         header img {
-            margin: 0 10px;
+            margin: auto;
         }
         
         nav ul {
@@ -41,7 +40,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin: 10px 0;
+            margin: auto;
         }
         
         nav ul li a {
@@ -106,6 +105,10 @@
             padding: 10px 0;
             width: 100%;
         }
+
+        #testing canvas {
+            visibility: visible;
+        }
     </style>
 </head>
 <body>
@@ -127,15 +130,31 @@
     <main>
         <div class="container">
             <div class="project">
-                <div id="autobiographical-game"></div>
-                <script src="p5games/AutoBioGame/sketch.js"></script>
+                
                 <h2>Autobiographical Game</h2>
+                
                 <p class="project-description">Attempt at making a game with various scene changes modeled after a JRPG story game. Explores scene transitions and basic game mechanics.</p>
+                <div id="testing"></div>
             </div>
+            
         </div>
+        
     </main>
     <footer>
         <p>&copy; 2024 Melisa Li | p5.js Projects</p>
     </footer>
+
+    <script src="p5games/AutoBioGame/Player.js"></script>
+    <script src="p5games/AutoBioGame/TitleScene.js"></script>
+    <script src="p5games/AutoBioGame/Wall.js"></script>
+
+    <script src="p5games/AutoBioGame/Scene1.js"></script>
+    <script src="p5games/AutoBioGame/Scene2.js"></script>
+    <script src="p5games/AutoBioGame/Scene3.js"></script>
+    <script src="p5games/AutoBioGame/Scene4.js"></script>
+
+    <script src="p5games/AutoBioGame/EndScene.js"></script>
+
+    <script src="p5games/AutoBioGame/sketch.js"></script>
 </body>
 </html>

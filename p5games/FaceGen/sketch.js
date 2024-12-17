@@ -1,32 +1,15 @@
-let socket;  // WebSocket object
 let currentFace = "";
 const faces = [':3', ':D', '（＾ω＾） ', ':p', ';-;', 'T_T', '>:3', '>:D', '(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄', '(*´_ゝ｀)', '(◕ㅅ◕✿)', '(≧▽≦)', '乁(ツ)ㄏ'];
 
 function setup() {
-  createCanvas(400, 400);
-  textSize(32);
-  background(250);
-  textAlign(CENTER);
+    createCanvas(400, 600) .parent("testing"); 
+    canvas.parent('sketch-holder'); 
+    createCanvas(400, 400);
+    textSize(32);
+    background(250);
+    textAlign(CENTER);
 
   currentFace = random(faces);
-
-  // Connect to the WebSocket server
-  socket = new WebSocket('ws://localhost:8080'); // Connect to the WebSocket server
-
-  // When a message is received from the WebSocket server
-  socket.onmessage = function(event) {
-    console.log('Received from server:', event.data);
-
-    // If the button is pressed, change the face
-    if (event.data === 'BUTTON_PRESSED') {
-      currentFace = random(faces);
-    }
-  };
-
-  // Log if the connection is successful
-  socket.onopen = function() {
-    console.log('Connected to WebSocket server');
-  };
 }
 
 function keyPressed() {

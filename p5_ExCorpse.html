@@ -6,15 +6,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Melisa Li - p5.js Projects</title>
+    <title>Melisa Li - Exquisite Corpse</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
             background-image: url("assets/bgs/bg7.jpeg");
-            margin: 0;
+            margin: auto;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
         
         header {
@@ -22,6 +25,14 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            margin: auto;
         }
         
         nav ul {
@@ -30,7 +41,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin: 10px 0;
+            margin: auto;
         }
         
         nav ul li a {
@@ -44,12 +55,23 @@
             color: #6a0000;
         }
         
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            width: 100%;
+            flex-grow: 1;
+            padding: 20px;
+        }
+        
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
         }
         
         .project {
@@ -58,8 +80,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 15px;
             text-align: center;
-            max-width: 400px;
+            max-width: width;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         .project canvas, .project iframe {
@@ -71,6 +96,7 @@
             margin-top: 10px;
             font-style: italic;
             color: #333;
+            text-align: center;
         }
         
         footer {
@@ -78,17 +104,17 @@
             color: rgb(0, 0, 0);
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            bottom: 0;
             width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/lotus.gif" alt="lotus" style="width:110px;height:100px;">
-        <img src="assets/titles/p5js.png" alt="p5.js Projects" style="width:170px;height:80px;">
-        <img src="assets/lotus.gif" alt="lotus" style="width:110px;height:100px;">
+        <div>
+            <img src="assets/lotus.gif" alt="lotus" style="width:110px;height:100px;">
+            <img src="assets/titles/p5js.png" alt="p5.js Projects" style="width:170px;height:80px;">
+            <img src="assets/lotus.gif" alt="lotus" style="width:110px;height:100px;">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -98,48 +124,22 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <div class="container">
             <div class="project">
                 <div id="autobiographical-game"></div>
-                <script src="p5games/AutoBioGame/sketch.js"></script>
+               
                 <h2>Autobiographical Game</h2>
                 <p class="project-description">Attempt at making a game with various scene changes modeled after a JRPG story game. Explores scene transitions and basic game mechanics.</p>
-            </div>
-            
-            <div class="project">
+                <div id="testing"></div>
+
                 <script src="p5games/ExCorpse/sketch.js"></script>
-                <h2>Exquisite Corpse</h2>
-                <p class="project-description">Collaborative graphic created using rudimentary shapes and text functions, combining work from multiple group members.</p>
-            </div>
+                <script src="p5games/ExCorpse/p5.js"></script>
+                <script src="p5games/ExCorpse/p5.sound.min.js"></script>
             
-            <div class="project">
-                <script src="p5games/LostFound/sketch.js"></script>
-                <h2>Lost & Found</h2>
-                <p class="project-description">Recreated a lost phone using basic shapes and a manually crafted metallic gradient to achieve a realistic effect.</p>
-            </div>
-            
-            <div class="project">
-                <script src="p5games/OpIllusion/sketch.js"></script>
-                <h2>Optical Illusion</h2>
-                <p class="project-description">Inspired by spiraling optical illusions, featuring an interactive fish mouse pointer creating a water ripple effect.</p>
-            </div>
-            
-            <div class="project">
-                <script src="p5games/ExClock/sketch.js"></script>
-                <h2>Experimental Clock</h2>
-                <p class="project-description">Innovative oven-themed clock that visualizes time passage through a cake rising animation.</p>
-            </div>
-            
-            <div class="project">
-                <script src="p5games/AutoBioGame/sketch.js"></script>
-                <h2>Face Generator</h2>
-                <p class="project-description">Random face generator using arrays and Japanese text emoticons, demonstrating creative coding techniques.</p>
             </div>
         </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Melisa Li | p5.js Projects</p>
     </footer>
